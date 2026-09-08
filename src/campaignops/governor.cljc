@@ -46,7 +46,7 @@
       ALWAYS escalate. `campaignops.phase` keeps all three out of every
       phase's `:auto` set independently — two layers, not one."
   (:require [campaignops.store :as store]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [crowdfunding.campaign :as cf]
             [crowdfunding.trust :as trust]))
 
@@ -161,7 +161,7 @@
       :detail (str ":effect は :propose のみ許可されるが " (pr-str (:effect proposal)) " が提案された")}]))
 
 (defn- text-blob [proposal]
-  (str/lower-case (pr-str (select-keys proposal [:op :summary :rationale :cites]))))
+  (str/lower (pr-str (select-keys proposal [:op :summary :rationale :cites]))))
 
 (defn- scope-exclusion-violations [proposal]
   (let [op (:op proposal)
