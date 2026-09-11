@@ -52,9 +52,9 @@ that never happened.
 ## Run it
 
 ```bash
-clojure -M:dev:run     # offline demo: review, refusals, a human-gated launch
-clojure -M:dev:test    # 22 tests
-clojure -M:lint
+kbb -M:dev:run     # offline demo: review, refusals, a human-gated launch
+kbb -M:dev:test    # 22 tests
+kbb -M:lint
 ```
 
 The demo shows a thin-evidence campaign and a revenue-share campaign both

@@ -1,7 +1,7 @@
 (ns campaignops.sim
   "Offline demo: run a launch review, watch a thin-evidence campaign and a
   security-shaped one get refused, and watch a launch wait for a human.
-  `clojure -M:dev:run`."
+  `kbb -M:dev:run`."
   (:require [campaignops.operation :as operation]
             [campaignops.store :as store]
             [langgraph.graph :as g]))
